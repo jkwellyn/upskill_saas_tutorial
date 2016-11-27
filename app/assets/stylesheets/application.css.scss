@@ -16,7 +16,14 @@
  
  @import 'bootstrap-sprockets';
  @import 'bootstrap';
+ 
+ 
+// Typography styles 
+h1, h2, h3 {
+  font-family: 'Indie Flower', cursive;     
+ }
 
+// Background Gradient
 .navbar, .home-callout, .logo {
  // Gradiet provided by _ighosh at uiGradients.com
  background: #ddd6f3; /* fallback for old browsers */
@@ -24,35 +31,27 @@
  background: linear-gradient(to left, #ddd6f3 , #faaca8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.navbar {
-  border: none;
-} 
-
-.navbar-default, .navbar-brand {
-  color: #FFF;
-}
-
-.navbar-default, .navbar-brand:hover {
-  color: #FFF;
-  opacity: 0.75;
-}
-
-.navbar-default .navbar-nav > li > a {
-  color: #FFF;
-}
-
-.navbar-default .navbar-nav > li > a:hover {
-  color: #FFF;
-  opacity: 0.75;
-}
-
-h1 {
-  font-family: 'Indie Flower', cursive;     
- }
-
+// Home Page Styles
 .home-callout {
   color: white;
   margin-top: -25px;
   padding-top: 50px;
   padding-bottom: 100px;
 }
+
+// Navbar Styles
+.navbar {
+  border: none;
+} 
+
+.navbar-default, 
+.navbar-brand, 
+.navbar-default .navbar-nav > li > a {
+  color: #FFF;
+  &:hover {
+    color: #FFF;
+    opacity: 0.75;
+ }
+}
+
+
