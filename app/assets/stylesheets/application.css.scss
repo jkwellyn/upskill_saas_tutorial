@@ -17,7 +17,7 @@
  @import 'bootstrap-sprockets';
  @import 'bootstrap';
 
-* {
+.navbar, .home-callout, .logo {
  // Gradiet provided by _ighosh at uiGradients.com
  background: #ddd6f3; /* fallback for old browsers */
  background: -webkit-linear-gradient(to left, #ddd6f3 , #faaca8); /* Chrome 10-25, Safari 5.1-6 */
@@ -25,9 +25,17 @@
 }
 
 .navbar {
-  color: #FFF;
+  border: none;
 } 
 
-.logo {
-     font-family: 'Indie Flower', cursive;
+h1 {
+    font-family: 'Indie Flower', cursive;     
+     
  }
+
+.home-callout {
+    color: white;
+    margin-top: -25px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
