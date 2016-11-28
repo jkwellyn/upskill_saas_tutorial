@@ -1,0 +1,23 @@
+<!doctype>
+<html>
+  <div class=container>
+    <header></header>
+    <body>
+      <h3 style="text-center color white">Contact Us</h3>
+      <%= form_for "/contacts" do |f| %>
+      
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+      
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+      
+      <%= f.label :comments %>
+      <%= f.text_area :comments %>
+     
+      <%= f.submit "Submit" %>
+      <% end %>
+    </body>
+    <footer></footer>
+  </div>
+</html>
