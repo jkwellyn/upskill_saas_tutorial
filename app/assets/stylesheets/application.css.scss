@@ -48,6 +48,7 @@ h1, h2, h3 {
 .navbar-brand {
  font-family: 'Indie Flower', cursive; 
  weight: 800;
+
 }
 
 .navbar-default, 
@@ -59,5 +60,13 @@ h1, h2, h3 {
     opacity: 0.75;
  }
 }
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
 
-
+.navbar-default .navbar-toggle {
+    border: 2px solid white;
+    &:hover, &:focus {
+       background-color: #ddd6f3;
+    }
+}
